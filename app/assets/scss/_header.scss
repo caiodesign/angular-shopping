@@ -1,0 +1,30 @@
+#header{
+    > div{
+        position: fixed;
+        right: 0;
+        top: 10px;
+        background-color: white;
+        a{
+            padding: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        > div{
+            background-color: red;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 4px;
+            right: 48px;
+            span{
+                font-size: 12px;
+                font-family: $open-sans;
+                font-weight: $open-sans-semibold;
+                color: white;
+            }
+        }
+    }
+}

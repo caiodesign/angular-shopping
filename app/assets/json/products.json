@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "title": "iPhone 6S",
+        "description": "32GB - 4G Anatel",
+        "image": "http://phonesstorekenya.com/wp-content/uploads/2016/05/iphone-6s-good9-128x128.jpg",
+        "price": 1600
+    },
+    {
+        "id": 1,
+        "title": "Samsung Galaxy 10",
+        "description": "64GB - 3G Anatel",
+        "image": "http://phonesstorekenya.com/wp-content/uploads/2016/05/iphone-6s-good9-128x128.jpg",
+        "price": 1600
+    },
+    {
+        "id": 2,
+        "title": "Motorola V4",
+        "description": "16GB - 5G Anatel",
+        "image": "http://phonesstorekenya.com/wp-content/uploads/2016/05/iphone-6s-good9-128x128.jpg",
+        "price": 1600
+    },
+    {
+        "id": 3,
+        "title": "Sony Xperia",
+        "description": "32GB - 2G Anatel",
+        "image": "http://phonesstorekenya.com/wp-content/uploads/2016/05/iphone-6s-good9-128x128.jpg",
+        "price": 1600
+    }
+]
