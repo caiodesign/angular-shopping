@@ -1,0 +1,35 @@
+<div id="shopping">
+    <div id="header">
+        <div>
+            <a ui-sref="cart"><span class="icon-cart"></span></a>
+            <div>
+                <span id="current-items">0</span>
+            </div>
+        </div>
+    </div>
+    <div id="products" class="container">
+        <div ng-repeat="item in shop.items">
+
+            <div class="product-image">
+                <img src="{{item.image}}" alt="{{item-title}}" />
+            </div>
+            <div class="product-title">
+                <p>{{item.name}}</p>
+            </div>
+            <div class="product-description">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="product-price">
+                <p>R{{item.price | currency}}</p>
+            </div>
+
+            <div class="product-cart">
+                <a ui-sref="cart" class="button-orange" ng-click="shop.addToCart(item)">
+                    SHOP <span class="icon-cart"></span>
+                </a>
+                
+            </div>
+
+        </div>
+    </div>
+</div>

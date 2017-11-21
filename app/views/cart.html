@@ -1,0 +1,30 @@
+<div ng-controller="CartController as cart">
+    
+    <div id="cart" class="container">
+        <h2>
+            Meu Carrinho
+        </h2>
+
+        <div ng-repeat="item in cart.cartStorage.items">
+            <div class="product-image">
+                <img src="{{item.image}}" alt="{{item-title}}" />
+            </div>
+            <div class="product-title">
+                <p>{{item.name}}</p>
+            </div>
+            <div class="product-description">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="product-price">
+                <p>R{{item.price | currency}}</p>
+            </div>
+                
+            <a ng-click="cart.removeFromCart(item)">
+                Remover do carrinho <span class="icon-cross"></span>
+            </a>
+        </div>
+        <p></p>
+        <a class="button-blue" ui-sref="home">Continuar Comprando</a>
+
+    </div>
+</div>

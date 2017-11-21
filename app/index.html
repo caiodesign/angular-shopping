@@ -1,50 +1,22 @@
 <html ng-app="app">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">    
     <head>
         <link rel="stylesheet" href="/assets/css/style.css">
     </head>
-    <body ng-controller="mainController as main">
+    <body>
 
-        <div id="shopping">
-            <div id="header">
-                <div>
-                    <a href=""><span class="icon-cart"></span></a>
-                    <div>
-                        <span>1</span>
-                    </div>
-                </div>
-            </div>
-            <div id="products" class="container">
-                <div ng-repeat="product in products">
-
-                    <div class="product-image">
-                        <img src="{{product.image}}" alt="{{product-title}}" />
-                    </div>
-                    <div class="product-title">
-                        <p>{{product.title}}</p>
-                    </div>
-                    <div class="product-description">
-                        <p>{{product.description}}</p>
-                    </div>
-                    <div class="product-price">
-                        <p>R${{product.price}}</p>
-                    </div>
-
-                    <div class="product-cart">
-                        <a href="#">SHOP <span class="icon-cart"></span></a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        <div ui-view></div>
 
     </body>
 
     <script src="/assets/js/_lib/jquery.min.js"></script>
     <script src="/assets/js/_lib/angular.min.js"></script>
+    <script src="/assets/js/_lib/angular-ui-router.min.js"></script>
 
     <script src="/assets/js/app.js"></script>
-    <script src="/assets/js/controllers/main-controller.js"></script>
+    <script src="/assets/js/controllers/product-controller.js"></script>
+    <script src="/assets/js/controllers/cart-controller.js"></script>
     <script src="/assets/js/directives/on-finish-render.js"></script>
 </html>
