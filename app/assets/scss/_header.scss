@@ -3,13 +3,13 @@
         position: fixed;
         right: 0;
         top: 10px;
-        background-color: white;
+        background-color: $white;
         a{
             padding: 20px;
             border: 1px solid rgba(0, 0, 0, 0.1);
         }
         > div{
-            background-color: red;
+            background-color: $red;
             width: 20px;
             height: 20px;
             border-radius: 50%;
@@ -23,7 +23,7 @@
                 font-size: 12px;
                 font-family: $open-sans;
                 font-weight: $open-sans-semibold;
-                color: white;
+                color: $white;
             }
         }
     }

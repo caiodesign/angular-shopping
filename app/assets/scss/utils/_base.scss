@@ -48,7 +48,7 @@ p, input, a, button{
 .button-red{
     background-color: $red;
     position: relative;
-    color: #fff;
+    color: $white;
     padding: 15px;
     &:before, &:after{
         background-color: $red;
