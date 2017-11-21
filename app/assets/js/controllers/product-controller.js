@@ -10,7 +10,7 @@ angular.module('app').factory('cartStorage', function() {
         }
         return service;
     })
-    .controller('ProductController', function(cartStorage) {
+    .controller('ProductController', function(cartStorage, $rootScope) {
         var _this = this;
         _this.cartStorage = cartStorage.cart;
 
@@ -49,8 +49,7 @@ angular.module('app').factory('cartStorage', function() {
         _this.addToCart = function(item) {
             _this.cartStorage.items.push(item);
             item.addedToCart = true;
+            $rootScope.cartQuantity = $rootScope.cartQuantity + 1;
         }
-
-        itemsNumber(_this.cartStorage.items.length);
         
     });

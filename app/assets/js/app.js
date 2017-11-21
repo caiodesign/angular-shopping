@@ -1,4 +1,4 @@
-angular.module('app', ['ui.router']).config(config);
+angular.module('app', ['ui.router']).config(config).run(run);
 
 function config( $stateProvider, $urlRouterProvider, $locationProvider ){
     
@@ -18,6 +18,10 @@ function config( $stateProvider, $urlRouterProvider, $locationProvider ){
         })
 
 };
+
+function run($rootScope){
+    $rootScope.cartQuantity = 0;
+}
 
 function itemsNumber(items){
     return document.querySelector("#current-items").innerHTML = items;
