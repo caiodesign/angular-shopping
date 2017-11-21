@@ -21,6 +21,7 @@ function config( $stateProvider, $urlRouterProvider, $locationProvider ){
 
 function run($rootScope){
     $rootScope.cartQuantity = 0;
+    $rootScope.totalPrice = 0;
 }
 
 function itemsNumber(items){

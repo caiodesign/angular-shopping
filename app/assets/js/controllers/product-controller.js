@@ -46,6 +46,8 @@ angular.module('app').factory('cartStorage', function() {
             _this.cartStorage.items.push(item);
             item.addedToCart = true;
             $rootScope.cartQuantity = $rootScope.cartQuantity + 1;
+            $rootScope.totalPrice = $rootScope.totalPrice + item.price;
+            console.log(item.price);
         }
         
     });

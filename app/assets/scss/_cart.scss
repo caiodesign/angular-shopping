@@ -84,5 +84,18 @@
             text-align: left;
             margin: 30px 0;
         }
+        .total-price{
+            font-family: $TradeGothic;
+            font-size: 14px;
+            @media(min-width: $desktop){
+                padding: 20px;
+                font-size: 20px;
+            }
+            span{
+                font-family: $open-sans;
+                font-weight: $open-sans-light;
+                display: inline-block;
+            }
+        }
     
 }
