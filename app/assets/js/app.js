@@ -15,7 +15,11 @@ function config( $stateProvider, $urlRouterProvider, $locationProvider ){
             url: '/cart',
             templateUrl: 'views/cart.html',
             controller: 'CartController as cart'
-        })
+        }),
+        $locationProvider.html5Mode({
+            enabled: !0,
+            requireBase: !0
+        });
 
 };
 
@@ -23,7 +27,3 @@ function run($rootScope){
     $rootScope.cartQuantity = 0;
     $rootScope.totalPrice = 0;
 }
-
-function itemsNumber(items){
-    return document.querySelector("#current-items").innerHTML = items;
-};
